@@ -199,9 +199,9 @@ predict_future_price = my_model.predict(x_test2)
 predict_future_price = scaler.inverse_transform(predict_future_price)
 
 
-st.subheader(f" Predecting New Day Closing Price")
-st.write (f'Today Date = {today}')
-st.write (f'Predicted closing price = {predict_future_price}')
+st.subheader(f" Predecting New Closing Price")
+#st.write (f'Today Date = {today}')
+st.write (f'Next Predicted closing price = {predict_future_price}')
 st.write ("")
 st.write ("___________________________________________________________")
 st.write ("")
