@@ -169,11 +169,11 @@ dfy3 = dfy4.reset_index()
 dfy3['Day'] = pd.to_datetime(dfy3['Date']).dt.date
 last_date = str(dfy3.Day[0])
 
-st.subheader(f" Test on Last Day Closing Price")
-st.write(f'Last Day Date = {last_date}')
+#st.subheader(f" Test on Last Day Closing Price")
+#st.write(f'Last Day Date = {last_date}')
 #print (f'Last Day Date = {last_date}')
-st.write (f'Last Day Actual Closing Price = [[{last_closing_price}]]')
-st.write (f'Last Day Predicted Closing Price = {predict_Last_price}')
+#st.write (f'Last Day Actual Closing Price = [[{last_closing_price}]]')
+#st.write (f'Last Day Predicted Closing Price = {predict_Last_price}')
 
 
 ###### predict today price
