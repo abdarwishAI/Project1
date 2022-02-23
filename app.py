@@ -33,7 +33,7 @@ start_date = '2010-12-12'
 #### Streamlit Web App
 st.title('Stock Price Prediction')
 
-Ticker = st.text_input("Enter Stock Symbol 'Ticker' examples:   FB  ,  MSFT  ,  TWTR ,  AAPL " , "TWTR")
+Ticker = st.text_input("Enter Stock Symbol 'Ticker' examples:   FB  ,  MSFT  ,  TWTR ,  BTC-USD , GOLD , BZ=F " , "TWTR")
 df = yf.download(Ticker, start_date, end_date)
 st.subheader(f'{Ticker} Stock Dataset')
 df_table = df.reset_index()
